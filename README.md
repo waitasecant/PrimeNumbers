@@ -1,2 +1,2 @@
 # PrimeNumbers
-Getting primes up to the input stored in a .txt file usinf file handling
+Getting primes up to the input stored in a .txt file using file handling
