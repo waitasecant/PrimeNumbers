@@ -1,6 +1,6 @@
 from math import sqrt
 
-def isPrime(n):
+def getPrime(n):
 	if (n <= 1):
 		return None
 	for i in range(2, int(sqrt(n))+1):
@@ -10,7 +10,7 @@ def isPrime(n):
 
 def PrimesUptoM(m):
     for j in range(m+1):
-        x = isPrime(j)
+        x = getPrime(j)
         if x != None:
             data.append(x + " ")
         else:
@@ -19,7 +19,7 @@ def PrimesUptoM(m):
 
 def PrimesBetweenMandN(a ,b):
     for k in range(a, b+1):
-        x = isPrime(k)
+        x = getPrime(k)
         if x != None:
             data.append(x + " ")
         else:
@@ -52,7 +52,6 @@ def main():
         init = init.strip()
         init= init.split(" ")
         init1 = init[len(init)-1]
-        print(init1)
         inp2 = int(input("Enter the value"))
         LogDataBetweenMandN(eval(init1), inp2)
 
